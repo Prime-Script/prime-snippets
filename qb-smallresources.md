@@ -29,3 +29,16 @@ CreateThread(function()
     end
 end)
 ```
+
+2. This fixes an exploit regarding aim assist
+
+```
+CreateThread(function()
+  while true do
+    Wait(0)
+        if IsPedArmed(PlayerPedId(), 2) and IsPedArmed(PlayerPedId(), 4) then
+          SetPlayerLockon(PlayerId(), false)
+        end
+  end
+end)
+```
