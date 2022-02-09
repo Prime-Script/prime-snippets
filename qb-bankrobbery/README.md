@@ -2,21 +2,9 @@
 
 This is if you want to update your qb-bankrobbery script from the old **mhacking**, and replace it with a **No Pixel Inspired** Hacking Minigame!
 
-# Fleeca Bank
-- Delete The Function from lines 113 to 120
+# Config File
 
-```
-local function OnHackDone(success)
-    if success then
-        TriggerEvent('mhacking:hide')
-        TriggerServerEvent('qb-bankrobbery:server:setBankState', closestBank, true)
-    else
-        TriggerEvent('mhacking:hide')
-    end
-end
-```
-
-- Config.lua
+- Add this anywhere you want
 
 ```
 ------ / Hack The Fleeca Bank (Main Door) / Laptop Minigame
@@ -28,6 +16,21 @@ Config.FleecaRepeat = 2
 Config.PacificTime = 15
 Config.PacificBlocks = 4
 Config.PacificRepeat = 2
+```
+
+# Fleeca Bank
+
+- Delete The Function from lines 113 to 120
+
+```
+local function OnHackDone(success)
+    if success then
+        TriggerEvent('mhacking:hide')
+        TriggerServerEvent('qb-bankrobbery:server:setBankState', closestBank, true)
+    else
+        TriggerEvent('mhacking:hide')
+    end
+end
 ```
 
 - Replace the lines 326 and 327 | C & P this snippet (fleeca.lua)
