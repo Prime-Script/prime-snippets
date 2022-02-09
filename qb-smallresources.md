@@ -42,3 +42,24 @@ CreateThread(function()
   end
 end)
 ```
+
+3. Prevent players from losing clothes after being puched or taken damage
+
+```
+CreateThread(function ()
+    SetPedCanLosePropsOnDamage(PlayerPedId(), false, 0)
+end)
+
+local lastped = nil
+
+CreateThread(function ()
+    while true do
+        if PlayerPedId() ~= lastped then
+            lastped = PlayerPedId()
+            SetPedCanLosePropsOnDamage(PlayerPedId(), false, 0)
+        end
+        Wait(100)
+    end
+end
+)
+```
