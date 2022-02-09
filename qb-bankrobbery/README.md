@@ -18,7 +18,7 @@ Config.PacificBlocks = 4
 Config.PacificRepeat = 2
 ```
 
-# Fleeca Bank (fleeca.lua)
+# Fleeca Bank (client / fleeca.lua)
 
 - Delete The Function from lines 113 to 120
 
@@ -46,7 +46,7 @@ exports['hacking']:OpenHackingGame(Config.FleecaTime, Config.FleecaBlocks, Confi
                     end)
 ```
 
-# Pacific Bank (pacific.lua)
+# Pacific Bank (client / pacific.lua)
 
 - Delete The Function from lines 8 to 15
 
