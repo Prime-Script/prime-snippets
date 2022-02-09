@@ -2,7 +2,7 @@
 
 This is if you want to update your qb-bankrobbery script from the old **mhacking**, and replace it with a **No Pixel Inspired** Hacking Minigame!
 
-# Config File
+# Config (config.lua)
 
 - Add this anywhere you want
 
@@ -18,7 +18,7 @@ Config.PacificBlocks = 4
 Config.PacificRepeat = 2
 ```
 
-# Fleeca Bank
+# Fleeca Bank (fleeca.lua)
 
 - Delete The Function from lines 113 to 120
 
@@ -46,7 +46,7 @@ exports['hacking']:OpenHackingGame(Config.FleecaTime, Config.FleecaBlocks, Confi
                     end)
 ```
 
-# Pacific Bank
+# Pacific Bank (pacific.lua)
 
 - Delete The Function from lines 8 to 15
 
